@@ -11,7 +11,7 @@
   ],
   "typedocOptions": {
     "customTitle": "A purposely loose comparison tool.",
-    "customTitleLink": "https://github.com/unional/satisfier",
+    "customTitleLink": "https://github.com/cyberuni/satisfier",
     "entryPoints": [
       "ts/index.ts"
     ],

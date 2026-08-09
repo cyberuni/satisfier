@@ -1,14 +1,14 @@
 {
 	"name": "satisfier",
-	"version": "0.0.0-development",
+	"version": "5.4.2",
 	"description": "A purposely loose comparison tool.",
-	"homepage": "https://github.com/unional/satisfier",
+	"homepage": "https://github.com/cyberuni/satisfier",
 	"bugs": {
-		"url": "https://github.com/unional/satisfier/issues"
+		"url": "https://github.com/cyberuni/satisfier/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/unional/satisfier.git"
+		"url": "https://github.com/cyberuni/satisfier.git"
 	},
 	"license": "MIT",
 	"author": {
