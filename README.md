@@ -3,10 +3,10 @@
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][downloads-image]][downloads-url]
 
-[![GitHub NodeJS][github-nodejs]][github-action-url]
+[![GitHub Actions][github-actions-image]][github-action-url]
 [![Codecov][codecov-image]][codecov-url]
 
-[![Semantic Release][semantic-release-image]][semantic-release-url]
+[![Changesets][changesets-image]][changesets-url]
 
 [![Visual Studio Code][vscode-image]][vscode-url]
 
@@ -187,15 +187,15 @@ git push
 # create PR
 ```
 
-[codecov-image]: https://codecov.io/gh/unional/satisfier/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/unional/satisfier
+[changesets-image]: https://img.shields.io/badge/%F0%9F%A6%8B-changesets-blue.svg
+[changesets-url]: https://github.com/changesets/changesets
+[codecov-image]: https://codecov.io/gh/cyberuni/satisfier/branch/main/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/cyberuni/satisfier
 [downloads-image]: https://img.shields.io/npm/dm/satisfier.svg?style=flat
 [downloads-url]: https://npmjs.org/package/satisfier
-[github-action-url]: https://github.com/unional/satisfier/actions
-[github-nodejs]: https://github.com/unional/satisfier/workflows/nodejs/badge.svg
+[github-action-url]: https://github.com/cyberuni/satisfier/actions
+[github-actions-image]: https://github.com/cyberuni/satisfier/actions/workflows/release.yml/badge.svg
 [npm-image]: https://img.shields.io/npm/v/satisfier.svg?style=flat
 [npm-url]: https://npmjs.org/package/satisfier
-[semantic-release-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
-[semantic-release-url]: https://github.com/semantic-release/semantic-release
 [vscode-image]: https://img.shields.io/badge/vscode-ready-green.svg
 [vscode-url]: https://code.visualstudio.com/
