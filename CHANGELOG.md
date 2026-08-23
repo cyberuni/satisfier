@@ -1,5 +1,14 @@
 # satisfier
 
+## 5.4.3
+
+### Patch Changes
+
+- 0e514b6: Publish through npm trusted publishing (OIDC) with provenance, and correct the package
+  `version` back to the last real release. The previous `0.0.0-development` placeholder was
+  taken literally by changesets and published as `latest` on 2026-08-09; this release moves
+  the `latest` dist-tag back onto a real version.
+
 ## [5.4.2](https://github.com/unional/satisfier/compare/v5.4.1...v5.4.2) (2022-10-08)
 
 
