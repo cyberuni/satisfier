@@ -81,7 +81,7 @@
 		"type-plus": "^7.6.2",
 		"typedoc": "^0.28.20",
 		"typedoc-plugin-extras": "^4.0.1",
-		"typescript": "^5.9.3",
+		"typescript": "^7.0.0",
 		"vitest": "^4.1.11"
 	},
 	"packageManager": "pnpm@11.25.0"
