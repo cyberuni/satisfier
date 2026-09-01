@@ -21,7 +21,7 @@
 	"include": ["ts", "typings", "tsdown.config.ts", "vitest.config.ts"],
 	"typedocOptions": {
 		"customTitle": "A purposely loose comparison tool.",
-		"customTitleLink": "https://github.com/cyberuni/satisfier",
+		"titleLink": "https://github.com/cyberuni/satisfier",
 		"entryPoints": ["ts/index.ts"],
 		"out": "docs"
 	}
