@@ -1,20 +1,28 @@
 {
-  "extends": "./tsconfig.esm.json",
-  "compilerOptions": {
-    "noEmit": true,
-    // for bigint usage during tests
-    "target": "ES2020"
-  },
-  "include": [
-    "ts",
-    "typings"
-  ],
-  "typedocOptions": {
-    "customTitle": "A purposely loose comparison tool.",
-    "customTitleLink": "https://github.com/cyberuni/satisfier",
-    "entryPoints": [
-      "ts/index.ts"
-    ],
-    "out": "docs"
-  }
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		// bigint is exercised in the tests, so the whole check runs at ES2020.
+		"lib": ["DOM", "ES2020", "ES2021.Promise"],
+		"module": "node16",
+		"moduleResolution": "node16",
+		"newLine": "LF",
+		"noEmit": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": false,
+		"skipLibCheck": true,
+		"strict": true,
+		"stripInternal": true,
+		"target": "ES2020",
+		"types": ["node"],
+		"useDefineForClassFields": true
+	},
+	"include": ["ts", "typings", "tsdown.config.ts", "vitest.config.ts"],
+	"typedocOptions": {
+		"customTitle": "A purposely loose comparison tool.",
+		"customTitleLink": "https://github.com/cyberuni/satisfier",
+		"entryPoints": ["ts/index.ts"],
+		"out": "docs"
+	}
 }

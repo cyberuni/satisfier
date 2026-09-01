@@ -1,12 +1,9 @@
 ignores:
+  - "@biomejs/biome"
   - "@commitlint/*"
-  - '@repobuddy/jest'
-  - '@semantic-release/*'
+  - "@repobuddy/biome"
   - "@size-limit/*"
-  - "@types/jest"
-  - jest-*
+  - "@vitest/coverage-v8"
   - rimraf # https://github.com/depcheck/depcheck/issues/776
-  - semantic-release
-  - ts-jest
-  - tslib
+  - turbo
   - typedoc*
