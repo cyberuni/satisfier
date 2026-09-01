@@ -1,9 +1,0 @@
-ignores:
-  - "@biomejs/biome"
-  - "@commitlint/*"
-  - "@repobuddy/biome"
-  - "@size-limit/*"
-  - "@vitest/coverage-v8"
-  - rimraf # https://github.com/depcheck/depcheck/issues/776
-  - turbo
-  - typedoc*

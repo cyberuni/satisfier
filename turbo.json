@@ -12,7 +12,7 @@
 			"inputs": ["ts", "vitest.config.*", "tsconfig.*", "package.json"],
 			"outputs": ["coverage/**"]
 		},
-		"depcheck": {
+		"knip": {
 			"dependsOn": ["build"]
 		},
 		"nuke": {
