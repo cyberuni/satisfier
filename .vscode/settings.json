@@ -1,19 +1,11 @@
 {
-  "cSpell.words": [
-    "codeql",
-    "jsnext",
-    "pinst",
-    "tersible",
-    "tersify"
-  ],
-  "eslint.enable": true,
-  "json.schemas": [
-    {
-      "fileMatch": [
-        "tsconfig.*.json"
-      ],
-      "url": "http://json.schemastore.org/tsconfig"
-    }
-  ],
-  "typescript.tsdk": "node_modules/typescript/lib"
+	"cSpell.words": ["codeql", "jsnext", "tersible", "tersify", "tsdown"],
+	"editor.defaultFormatter": "biomejs.biome",
+	"json.schemas": [
+		{
+			"fileMatch": ["tsconfig.*.json"],
+			"url": "http://json.schemastore.org/tsconfig"
+		}
+	],
+	"typescript.tsdk": "node_modules/typescript/lib"
 }

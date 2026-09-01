@@ -6,6 +6,9 @@ import { createSatisfier } from './createSatisfier.js'
  * @param expectation expectation
  */
 export function none(expectation: any) {
-  const s = createSatisfier(expectation)
-  return tersible((e: any) => e && Array.isArray(e) && !e.some(v => s.test(v)), () => `none(${tersify(expectation)})`)
+	const s = createSatisfier(expectation)
+	return tersible(
+		(e: any) => e && Array.isArray(e) && !e.some((v) => s.test(v)),
+		() => `none(${tersify(expectation)})`,
+	)
 }

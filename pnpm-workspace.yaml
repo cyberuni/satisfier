@@ -1,4 +1,27 @@
 allowBuilds:
-  '@swc/core': true
+  # size-limit's estimator. `@swc/core` and `unrs-resolver` left with jest and eslint;
+  # nothing in the tree pulls them any more.
   esbuild: true
+  # macOS-only optional native watcher, via vite/rollup.
   fsevents: true
+
+# The 24h supply-chain soak, moved here from `.npmrc` so the whole policy reads in one
+# place (pnpm 11 takes these settings from the workspace file).
+#
+# `minimumReleaseAgeStrict` is the important half. pnpm 11's DEFAULT mode is loose: when
+# it meets a package younger than the window it does not fail — it silently appends that
+# package to `minimumReleaseAgeExclude` and carries on. Under that default the soak
+# enforces nothing and the exclusion list grows on its own (observed in sibling repos,
+# where routine installs had auto-written real entries nobody asked for). Strict mode
+# turns a too-young package into ERR_PNPM_MINIMUM_RELEASE_AGE_VIOLATION instead, so every
+# entry below has to be a deliberate, reviewed pin.
+minimumReleaseAge: 1440
+minimumReleaseAgeStrict: true
+minimumReleaseAgeExclude:
+  # tersify 4.0.6 is this package's own upstream, released today from the same
+  # modernization sweep and published with provenance. Pinned to the exact version so the
+  # soak keeps governing everything else; remove once it ages past the window.
+  - tersify@4.0.6
+  # tersify 4.0.6's own runtime dependency, released in the same sweep. Excluding tersify
+  # alone is not enough — the soak is evaluated per resolved version, transitives included.
+  - unpartial@1.0.7
