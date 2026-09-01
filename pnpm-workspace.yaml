@@ -25,3 +25,13 @@ minimumReleaseAgeExclude:
   # tersify 4.0.6's own runtime dependency, released in the same sweep. Excluding tersify
   # alone is not enough — the soak is evaluated per resolved version, transitives included.
   - unpartial@1.0.7
+
+# Dev-tree advisory with no upgrade path: `js-yaml@4.1.1` arrives through
+# `cosmiconfig@9.0.1` under `@commitlint/cli`, and every parent is already on its latest
+# release, so bumping a direct dependency reaches none of it. cosmiconfig asks for
+# `^4.1.0`, so this stays inside its declared range. `satisfier` has one runtime
+# dependency (`tersify`) and commitlint is not it, so none of this ships to consumers.
+# Drop the line once the tree resolves past it on its own.
+overrides:
+  # GHSA-5p4m-2wfm-xmqj (js-yaml), via cosmiconfig
+  js-yaml@<4.3.1: '>=4.3.1 <5'
