@@ -78,7 +78,7 @@
 		"size-limit": "^13.0.3",
 		"tsdown": "^0.22.14",
 		"turbo": "^2.10.12",
-		"type-plus": "8.0.0-beta.10",
+		"type-plus": "8.0.0-beta.11",
 		"typedoc": "^0.28.20",
 		"typedoc-plugin-extras": "^4.0.1",
 		"typescript": "^5.9.3",
