@@ -1,4 +1,4 @@
-import { isType } from 'type-plus'
+import { testType } from 'type-plus'
 import { describe, expect, test } from 'vitest'
 import { anything, createSatisfier } from './index.js'
 import { testArrow, testFn, testSymbol } from './testPredicates.js'
@@ -387,7 +387,7 @@ describe('predicate function', () => {
 test('use generic to lock in the type of the input', () => {
 	const s = createSatisfier<{ a: number }>(undefined)
 	const y: Parameters<typeof s.exec> = {} as any
-	isType.equal<true, { a: number }, (typeof y)[0]>()
+	testType.equal<{ a: number }, (typeof y)[0]>(true)
 })
 
 describe('test()', () => {
