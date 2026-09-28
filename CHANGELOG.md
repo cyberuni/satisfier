@@ -1,5 +1,11 @@
 # satisfier
 
+## 5.4.6
+
+### Patch Changes
+
+- 907a787: Update `tersify` to `^4.0.8`.
+
 ## 5.4.5
 
 ### Patch Changes
