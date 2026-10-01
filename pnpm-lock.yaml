@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  js-yaml@<4.3.1: '>=4.3.1 <5'
+  js-yaml@<4.3.1: <6
 
 importers:
 
@@ -1848,9 +1848,6 @@ packages:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
 
-  tersify@4.0.6:
-    resolution: {integrity: sha512-+z2dTeRvbPyI7qiAmBY+VgWnhhN9IuaGjgrPfeF33hI4A/Yd9KT11tbc4l8vfIA3L/5EWiE0swvxOfAckGRuzA==}
-
   tersify@4.0.8:
     resolution: {integrity: sha512-8SP19qXCXiWztbyJLqmCwstqtZg7F5grbSov3yh8C+fyqHgKyfMaI/c5DCMKIGDkpoKX8cIz9ZqJxN7zZDtQcQ==}
 
@@ -2993,7 +2990,7 @@ snapshots:
       iso-error: 7.0.0
       path-equal: 1.2.8
       satisfier: 5.4.4
-      tersify: 4.0.6
+      tersify: 4.0.8
       type-plus: 8.0.0-beta.10(typescript@5.9.3)
     transitivePeerDependencies:
       - typescript
@@ -3530,7 +3527,7 @@ snapshots:
 
   satisfier@5.4.4:
     dependencies:
-      tersify: 4.0.6
+      tersify: 4.0.8
 
   semver@6.3.0: {}
 
@@ -3571,11 +3568,6 @@ snapshots:
   supports-color@7.2.0:
     dependencies:
       has-flag: 4.0.0
-
-  tersify@4.0.6:
-    dependencies:
-      acorn: 8.18.0
-      unpartial: 1.0.7
 
   tersify@4.0.8:
     dependencies:
@@ -3636,13 +3628,13 @@ snapshots:
 
   type-plus@8.0.0-beta.10(typescript@5.9.3):
     dependencies:
-      tersify: 4.0.6
+      tersify: 4.0.8
       typescript: 5.9.3
       unpartial: 1.0.7
 
   type-plus@8.0.0-beta.12(typescript@5.9.3):
     dependencies:
-      tersify: 4.0.6
+      tersify: 4.0.8
       typescript: 5.9.3
       unpartial: 1.0.7
 
