@@ -70,4 +70,4 @@ minimumReleaseAgeExclude:
 # Drop the line once the tree resolves past it on its own.
 overrides:
   # GHSA-5p4m-2wfm-xmqj (js-yaml), via cosmiconfig
-  js-yaml@<4.3.1: '>=4.3.1 <5'
+  js-yaml@<4.3.1: '<6'
