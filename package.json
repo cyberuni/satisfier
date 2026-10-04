@@ -70,7 +70,7 @@
 		"@repobuddy/biome": "^2.4.0",
 		"@size-limit/preset-small-lib": "^14.0.0",
 		"@types/node": "^26.4.0",
-		"@vitest/coverage-v8": "^4.1.11",
+		"@vitest/coverage-v8": "^5.0.0",
 		"assertron": "^11.7.0",
 		"husky": "^9.1.7",
 		"knip": "^6.33.0",
@@ -82,7 +82,7 @@
 		"typedoc": "^0.28.20",
 		"typedoc-plugin-extras": "^4.0.1",
 		"typescript": "^5.9.3",
-		"vitest": "^4.1.11"
+		"vitest": "^5.0.0"
 	},
 	"packageManager": "pnpm@12.9.1"
 }
