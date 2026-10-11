@@ -1,4 +1,4 @@
-import { testType } from 'type-plus'
+import { testType } from 'type-plus/testing'
 import { describe, expect, test } from 'vitest'
 import { anything, createSatisfier } from './index.js'
 import { testArrow, testFn, testSymbol } from './testPredicates.js'
