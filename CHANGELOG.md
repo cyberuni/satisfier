@@ -1,5 +1,11 @@
 # satisfier
 
+## 5.4.7
+
+### Patch Changes
+
+- 17821de: Include `CHANGELOG.md` in the published package.
+
 ## 5.4.6
 
 ### Patch Changes
